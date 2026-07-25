@@ -5,7 +5,7 @@
     "html_url": "https://github.com/santhoshvemuluri/Donation-Management-System",
     "description": "Responsive donation-management dashboard with donor tracking, campaign reporting, and fund-allocation visualizations. Built with HTML/CSS and focused on accessibility and mobile-first layouts.",
     "language": "HTML",
-    "image": "/assets/drive/Screenshot_20260725_203923.jpg",
+    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -15,7 +15,7 @@
     "html_url": "https://github.com/santhoshvemuluri/Github_activity_generator",
     "description": "Tool to generate realistic GitHub activity visualizations for demos and portfolio enhancement. Includes scripting to create commit events and a small UI to preview generated patterns.",
     "language": "JavaScript",
-    "image": "/assets/drive/Screenshot_20260725_203916.jpg",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -25,7 +25,7 @@
     "html_url": "https://github.com/santhoshvemuluri/login-page",
     "description": "Modern responsive login UI with client-side validation, animated input states, and clear error handling — built as a reusable component for larger apps.",
     "language": "HTML",
-    "image": "/assets/drive/Screenshot_20260725_203909.jpg",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -35,7 +35,7 @@
     "html_url": "https://github.com/santhoshvemuluri/negotiating-city-urban-co-design",
     "description": "Interactive design concept exploring urban co-design and city systems. Features data-driven visual storytelling, layered maps, and prototype interactions.",
     "language": "HTML",
-    "image": "/assets/drive/frames/frame_03.jpg",
+    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -45,7 +45,7 @@
     "html_url": "https://github.com/santhoshvemuluri/safe-voyage-travel-guide",
     "description": "Travel guide landing page showcasing destinations, safety recommendations, and route planning widgets. Emphasizes legible content and easy-to-scan itineraries.",
     "language": "HTML",
-    "image": "/assets/drive/frames/frame_04.jpg",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -55,7 +55,7 @@
     "html_url": "https://github.com/santhoshvemuluri/santhoshvemuluri",
     "description": "Mirror repository for personal site content and markdown notes used to generate portfolio pages, project write-ups, and contact info.",
     "language": "Markdown",
-    "image": "/assets/drive/frames/frame_05.jpg",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 1
   },
@@ -65,7 +65,7 @@
     "html_url": "https://github.com/santhoshvemuluri/santhosh_vemuluri_portfolio",
     "description": "This React-based portfolio showcases my personal brand, key projects, internship highlights, and contact pathways. Built with Vite and minimal dependencies for fast performance.",
     "language": "React",
-    "image": "/assets/drive/Screenshot_20260725_203909.jpg",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -75,7 +75,7 @@
     "html_url": "https://github.com/santhoshvemuluri/service-provider-connection",
     "description": "Service-provider matching app with searchable listings, profile matching logic, and streamlined booking flows. Focused on simplicity and fast discovery.",
     "language": "JavaScript",
-    "image": "/assets/drive/frames/frame_06.jpg",
+    "image": "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 1
   },
@@ -85,7 +85,7 @@
     "html_url": "https://github.com/santhoshvemuluri/Supply_Chain_Project",
     "description": "Supply-chain analytics tooling using VBA for data transformation, forecasting, and process automation to support operational decision-making.",
     "language": "VBA",
-    "image": "/assets/drive/frames/frame_07.jpg",
+    "image": "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   },
@@ -95,7 +95,7 @@
     "html_url": "https://github.com/santhoshvemuluri/thiranix_internship_tasks",
     "description": "Collection of internship assignments and automation scripts covering Python data processing, basic ML experiments, and hands-on engineering tasks.",
     "language": "Python",
-    "image": "/assets/drive/Screenshot_20260725_203916.jpg",
+    "image": "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=1200&q=80",
     "topics": [],
     "stargazers_count": 0
   }
