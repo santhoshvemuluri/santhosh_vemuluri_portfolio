@@ -53,7 +53,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-photo">
-          <img src="/assets/drive/frame_01.jpg" alt="Santhosh Vemuluri" />
+          <img src="/assets/drive/hero_right.jpg" alt="Santhosh Vemuluri" />
         </div>
       </div>
     </section>
