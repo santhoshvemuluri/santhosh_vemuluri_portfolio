@@ -7,6 +7,7 @@ export default function About(){
       <div className="container">
         <div className="relative mb-8">
           <div className="watermark text-6xl font-extrabold">PORTFOLIO 2025</div>
+          <div className="absolute right-0 top-0 text-slate-700/30 text-sm">PORTFOLIO 2025</div>
           <h2 className="text-3xl font-display font-bold"><span className="text-cyan-400">MY</span> BIOGRAPHY</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8 items-start">

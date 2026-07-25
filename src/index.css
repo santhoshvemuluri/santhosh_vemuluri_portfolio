@@ -21,3 +21,21 @@ body{
 .btn-outline{@apply border border-slate-700 text-white uppercase}
 
 .watermark{@apply text-slate-700/30 absolute select-none pointer-events-none}
+
+/* Micro-tuning utilities */
+:root{
+  --glow-cyan-1: rgba(0,240,255,0.12);
+  --glow-cyan-2: rgba(0,240,255,0.06);
+}
+.glow-cyan{box-shadow:0 12px 40px var(--glow-cyan-1), 0 4px 12px var(--glow-cyan-2)}
+.text-glow{text-shadow:0 8px 40px rgba(0,240,255,0.06)}
+.heading-tight{letter-spacing:-0.02em}
+.display-hero{font-size:clamp(2.25rem,5vw,4.5rem);line-height:1}
+.fade-in-up{transform:translateY(8px);opacity:0;transition:all .45s cubic-bezier(.2,.9,.2,1)}
+.fade-in-up.show{transform:none;opacity:1}
+
+/* small responsive tweaks */
+@media (max-width:768px){
+  .display-hero{font-size:2.25rem}
+  .about-left-img{display:none}
+}
