@@ -53,7 +53,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-photo">
-          <img src="/assets/drive/hero_right.jpg" alt="Santhosh Vemuluri" />
+          <img src="/assets/drive/side_image.jpg" alt="Santhosh Vemuluri" />
         </div>
       </div>
     </section>
@@ -62,7 +62,7 @@ function Hero() {
 
 function About() {
   return (
-    <section id="about" className="section">
+    <section id="about" className="section about-section">
       <div className="container grid-2">
         <div>
           <h2>About Me</h2>
@@ -78,7 +78,6 @@ function About() {
           </ul>
         </div>
         <div>
-          <img src="https://drive.google.com/uc?export=view&id=1gERgQ-YkC5_nze6_6koml0-_eV6VlqfU" alt="Santhosh" className="about-photo" />
           <h3>Experience</h3>
           <div className="card">
             <strong>Deloitte — Data Analyst Intern</strong>
@@ -101,6 +100,7 @@ function About() {
           </div>
         </div>
       </div>
+      <img className="about-left-img" src="/assets/drive/side_image.jpg" alt="decorative" />
     </section>
   )
 }
