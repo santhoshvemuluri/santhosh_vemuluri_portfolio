@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Donation-Management-System",
+    "full_name": "santhoshvemuluri/Donation-Management-System",
+    "html_url": "https://github.com/santhoshvemuluri/Donation-Management-System",
+    "description": "Responsive donation management dashboard for tracking donors, campaigns, and fund allocation.",
+    "language": "HTML",
+    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "Github_activity_generator",
+    "full_name": "santhoshvemuluri/Github_activity_generator",
+    "html_url": "https://github.com/santhoshvemuluri/Github_activity_generator",
+    "description": "Automated GitHub activity generator that makes contribution graphs more engaging and shareable.",
+    "language": "JavaScript",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "login-page",
+    "full_name": "santhoshvemuluri/login-page",
+    "html_url": "https://github.com/santhoshvemuluri/login-page",
+    "description": "Modern responsive login page with client-side validation and polished UI details.",
+    "language": "HTML",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "negotiating-city-urban-co-design",
+    "full_name": "santhoshvemuluri/negotiating-city-urban-co-design",
+    "html_url": "https://github.com/santhoshvemuluri/negotiating-city-urban-co-design",
+    "description": "Design concept site exploring urban planning, city strategy, and interactive visual storytelling.",
+    "language": "HTML",
+    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "safe-voyage-travel-guide",
+    "full_name": "santhoshvemuluri/safe-voyage-travel-guide",
+    "html_url": "https://github.com/santhoshvemuluri/safe-voyage-travel-guide",
+    "description": "Travel guide landing page with destination highlights, safety tips, and clear route planning.",
+    "language": "HTML",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "santhoshvemuluri",
+    "full_name": "santhoshvemuluri/santhoshvemuluri",
+    "html_url": "https://github.com/santhoshvemuluri/santhoshvemuluri",
+    "description": "Personal website repository for portfolio content, contact details, and project highlights.",
+    "language": "Markdown",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 1
+  },
+  {
+    "name": "santhosh_vemuluri_portfolio",
+    "full_name": "santhoshvemuluri/santhosh_vemuluri_portfolio",
+    "html_url": "https://github.com/santhoshvemuluri/santhosh_vemuluri_portfolio",
+    "description": "This portfolio project showcases my personal brand, skills, and recent internship work.",
+    "language": "React",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "service-provider-connection",
+    "full_name": "santhoshvemuluri/service-provider-connection",
+    "html_url": "https://github.com/santhoshvemuluri/service-provider-connection",
+    "description": "Service provider matching application built with JavaScript and streamlined user flows.",
+    "language": "JavaScript",
+    "image": "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 1
+  },
+  {
+    "name": "Supply_Chain_Project",
+    "full_name": "santhoshvemuluri/Supply_Chain_Project",
+    "html_url": "https://github.com/santhoshvemuluri/Supply_Chain_Project",
+    "description": "Supply chain analytics project using VBA for data modeling and process optimization.",
+    "language": "VBA",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  },
+  {
+    "name": "thiranix_internship_tasks",
+    "full_name": "santhoshvemuluri/thiranix_internship_tasks",
+    "html_url": "https://github.com/santhoshvemuluri/thiranix_internship_tasks",
+    "description": "Internship task collection with Python automation, data analysis, and development exercises.",
+    "language": "Python",
+    "image": "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=1000&q=80",
+    "topics": [],
+    "stargazers_count": 0
+  }
+]
