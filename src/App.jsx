@@ -37,11 +37,7 @@ function Hero() {
       <div className="container hero-inner">
         <div className="hero-text">
           <span className="hero-badge">Hello !!!</span>
-          <h1 className="hero-title">
-            I'm <span className="accent">Santhosh</span>
-            <br />
-            <span className="accent-alt">Vemuluri</span>
-          </h1>
+          <h1 className="hero-title">santhosh vemuluri</h1>
           <p className="hero-subtitle">Aspiring Software Engineer</p>
           <p className="lead">B.Tech student with a passion for building scalable digital solutions, data-driven dashboards, and secure full-stack applications.</p>
           <div className="cta-row">
@@ -75,6 +71,7 @@ function About() {
           </ul>
         </div>
         <div>
+          <img src="https://drive.google.com/uc?export=view&id=1gERgQ-YkC5_nze6_6koml0-_eV6VlqfU" alt="Santhosh" className="about-photo" />
           <h3>Experience</h3>
           <div className="card">
             <strong>Deloitte — Data Analyst Intern</strong>
