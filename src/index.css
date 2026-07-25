@@ -39,3 +39,7 @@ body{
   .display-hero{font-size:2.25rem}
   .about-left-img{display:none}
 }
+
+/* CursorGlow helper (if further tuning needed) */
+.cursor-glow-overlay{pointer-events:none;position:fixed;inset:0;z-index:0;transition:opacity .22s linear}
+.cursor-glow-soft{filter:blur(28px)}
