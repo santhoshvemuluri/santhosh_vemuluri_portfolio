@@ -208,8 +208,14 @@ export default function App() {
 
   useEffect(() => {
     const updateMousePosition = event => {
+      const cx = window.innerWidth / 2
+      const cy = window.innerHeight / 2
+      const nx = (event.clientX - cx) / cx // -1..1
+      const ny = (event.clientY - cy) / cy
       document.documentElement.style.setProperty('--mouse-x', `${event.clientX}px`)
       document.documentElement.style.setProperty('--mouse-y', `${event.clientY}px`)
+      document.documentElement.style.setProperty('--mx', nx.toFixed(4))
+      document.documentElement.style.setProperty('--my', ny.toFixed(4))
     }
 
     window.addEventListener('mousemove', updateMousePosition)
