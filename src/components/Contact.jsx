@@ -31,7 +31,7 @@ export default function Contact(){
         </div>
 
         <div className="mt-12 text-center">
-          <button className="px-8 py-3 rounded-md bg-cyanAccent text-black font-bold">DOWNLOAD RESUME</button>
+          <a href="https://drive.google.com/file/d/1qK2K4hrnhtqysoHf36QkwZ4Fo1HFfoBK/view?usp=sharing" target="_blank" rel="noreferrer" className="inline-block px-8 py-3 rounded-md bg-cyanAccent text-black font-bold">DOWNLOAD RESUME</a>
         </div>
       </div>
     </section>

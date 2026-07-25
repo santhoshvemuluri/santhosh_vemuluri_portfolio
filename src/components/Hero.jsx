@@ -8,7 +8,10 @@ export default function Hero(){
         <div className="flex-1">
           <div className="text-cyan-400 font-medium">Hello !!!</div>
           <h1 className="mt-4 font-extrabold font-display display-hero heading-tight">I'm <span className="text-cyan-400 text-glow">Santhosh</span> Vemuluri</h1>
-          <div className="inline-block mt-4 px-3 py-1 rounded-full bg-slate-900/40 border border-slate-700 text-xs font-semibold tracking-widest">ASPIRING SOFTWARE ENGINEER</div>
+          <div className="mt-4 flex items-center gap-3">
+            <div className="inline-block px-3 py-1 rounded-full bg-slate-900/40 border border-slate-700 text-xs font-semibold tracking-widest">ASPIRING SOFTWARE ENGINEER</div>
+            <div className="inline-block px-3 py-1 rounded-full border border-cyan-400 text-cyan-400 text-xs font-semibold tracking-widest">DATA ANALYST</div>
+          </div>
           <p className="mt-6 text-slate-300 max-w-xl">B.Tech student focused on building scalable digital solutions, data-driven dashboards, and secure full-stack applications with embedded systems experience.</p>
           <div className="mt-6 flex gap-4">
             <a href="#projects" className="bg-cyanAccent px-6 py-3 rounded-md font-bold text-black uppercase glow-cyan">VIEW PROJECTS</a>

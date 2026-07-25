@@ -12,7 +12,7 @@ export default function Navbar({ active }) {
           <a href="#contact" className="tracking-widest text-xs font-semibold uppercase">CONTACT</a>
         </nav>
         <div className="hidden md:block">
-          <a href="/resume.pdf" className="px-4 py-2 rounded-full border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black text-sm font-semibold transition">MY RESUME</a>
+          <a href="https://drive.google.com/file/d/1qK2K4hrnhtqysoHf36QkwZ4Fo1HFfoBK/view?usp=sharing" target="_blank" rel="noreferrer" className="px-4 py-2 rounded-full border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black text-sm font-semibold transition">MY RESUME</a>
         </div>
       </div>
     </header>
