@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CursorGlow from './components/CursorGlow'
 import About from './components/About'
+import Experience from './components/Experience'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Certifications from './components/Certifications'
@@ -12,7 +13,7 @@ export default function App(){
   const [activeSection, setActiveSection] = useState('hero')
 
   useEffect(() => {
-    const sections = ['hero', 'about', 'education', 'projects', 'certifications', 'contact']
+    const sections = ['hero', 'about', 'experience', 'education', 'projects', 'certifications', 'contact']
     const handleScroll = () => {
       const scroll = window.scrollY + 160
       let current = 'hero'
@@ -34,6 +35,7 @@ export default function App(){
       <main className="relative z-10">
         <Hero />
         <About />
+        <Experience />
         <Education />
         <Projects />
         <Certifications />

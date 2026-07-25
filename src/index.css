@@ -14,6 +14,10 @@ body{
 
 .container{@apply max-w-6xl mx-auto px-6}
 
+html{scroll-behavior:smooth}
+section{scroll-margin-top:6rem}
+::selection{background:rgba(0,240,255,0.25);color:#f8fbff}
+
 /* utility overrides for the project */
 .card{@apply bg-slate-900/60 border border-slate-800 rounded-lg p-6}
 .btn{@apply inline-block rounded-md px-6 py-3}
