@@ -6,9 +6,8 @@ export default function About(){
     <section id="about" className="py-20 relative">
       <div className="container">
         <div className="relative mb-8">
-          <div className="watermark text-6xl font-extrabold">PORTFOLIO 2025</div>
-          <div className="absolute right-0 top-0 text-slate-700/30 text-sm">PORTFOLIO 2025</div>
           <h2 className="text-3xl font-display font-bold"><span className="text-cyan-400">MY</span> BIOGRAPHY</h2>
+          <div className="absolute right-4 top-4 text-slate-800/20 text-6xl font-black pointer-events-none select-none">PORTFOLIO 2025</div>
         </div>
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <motion.div className="card" initial={{opacity:0, y:12}} whileInView={{opacity:1,y:0}} viewport={{once:true}}>
