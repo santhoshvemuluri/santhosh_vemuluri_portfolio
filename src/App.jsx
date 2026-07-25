@@ -32,6 +32,13 @@ function Nav({ active }) {
 }
 
 function Hero() {
+  useEffect(() => {
+    const els = document.querySelectorAll('.hero-text .hero-badge, .hero-text .hero-title, .hero-text .hero-subtitle, .hero-text .lead, .cta-row')
+    els.forEach((el, i) => {
+      el.style.transition = 'opacity .6s ease, transform .6s ease'
+      setTimeout(() => { el.style.opacity = 1; el.style.transform = 'translateY(0)'; }, 120 * i)
+    })
+  }, [])
   return (
     <section id="hero" className="hero">
       <div className="container hero-inner">
@@ -46,7 +53,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-photo">
-          <img src="https://santhoshvemuluriportfolio.lovable.app/assets/santhosh-bio-tIr1L6Ss.jpeg" alt="Santhosh Vemuluri" />
+          <img src="/assets/drive/frame_01.jpg" alt="Santhosh Vemuluri" />
         </div>
       </div>
     </section>

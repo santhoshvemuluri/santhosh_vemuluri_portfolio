@@ -1,6 +1,6 @@
 .root{--bg:#0b1020;--card:#0f1724;--muted:#9aa6b2;--accent:#00f0ff;--accent2:#a855f7;--glass:rgba(255,255,255,0.04)}
 *{box-sizing:border-box}
-body{margin:0;font-family:Poppins,Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071021 0%, #091223 100%);color:#e6eef6;line-height:1.5}
+body{margin:0;font-family:Poppins,Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#05060a 0%, #071229 45%, #071621 100%);color:#e6eef6;line-height:1.5}
 .container{max-width:1100px;margin:0 auto;padding:32px}
 .site-header{position:sticky;top:0;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));backdrop-filter:blur(10px);padding:18px 0;z-index:40}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
@@ -12,11 +12,23 @@ body{margin:0;font-family:Poppins,Inter,system-ui,Segoe UI,Roboto,'Helvetica Neu
 .hero-inner{display:flex;gap:36px;align-items:center;justify-content:space-between}
 .hero-text{flex:1;max-width:540px}
 .hero-badge{display:inline-flex;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,240,255,0.2);color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.18em;margin-bottom:18px}
-.hero-title{font-size:4.5rem;line-height:1.02;margin:0;max-width:12ch}
+.hero-title{font-size:4.2rem;line-height:1.02;margin:0;max-width:18ch;letter-spacing:0.01em;transform-origin:center;animation:heroAppear .9s cubic-bezier(.2,.9,.3,1) both}
 .accent{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .accent-alt{display:block;color:transparent;background:linear-gradient(90deg,var(--accent2),#6ee7ff);-webkit-background-clip:text;background-clip:text}
 .hero-subtitle{display:inline-block;margin:24px 0 18px;color:var(--accent);font-size:0.95rem;letter-spacing:0.12em;text-transform:uppercase}
 .lead{color:var(--muted);max-width:52ch;font-size:1.05rem;line-height:1.85}
+.hero-title, .hero-subtitle, .lead {opacity:0;transform:translateY(8px)}
+
+@keyframes heroAppear{
+	to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes floatBlob{
+	0%{transform:translateY(0px) translateX(0px)}
+	50%{transform:translateY(-18px) translateX(6px)}
+	100%{transform:translateY(0px) translateX(0px)}
+}
+.background-blob {animation:floatBlob 6s ease-in-out infinite}
 .cta-row{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .2s ease, box-shadow .2s ease, color .2s ease, background .2s ease}
 .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#041017;box-shadow:0 12px 32px rgba(0,240,255,0.16)}
@@ -38,8 +50,10 @@ h2{margin-top:0;font-size:2.4rem}
 .skills li{background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));padding:10px 14px;border-radius:999px;color:var(--muted);font-weight:700;border:1px solid rgba(255,255,255,0.08)}
 .project p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin:14px 0 16px}
 .project-meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.12em}
-.project{transition:transform .28s ease, box-shadow .28s ease;position:relative}
-.project:hover{transform:translateY(-8px);box-shadow:0 20px 55px rgba(0,0,0,0.22)}
+.project{transition:transform .36s cubic-bezier(.2,.9,.3,1), box-shadow .36s cubic-bezier(.2,.9,.3,1);position:relative}
+.project:hover{transform:translateY(-12px) scale(1.02);box-shadow:0 30px 80px rgba(0,0,0,0.32)}
+.project-image{width:100%;height:170px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,0.04);transition:transform .45s ease,filter .45s ease}
+.project-image:hover{transform:scale(1.03);filter:brightness(1.03)}
 .contact-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:24px;align-items:start}
 .contact-card{display:flex;flex-direction:column;gap:16px}
 .site-footer{padding:28px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.04)}
