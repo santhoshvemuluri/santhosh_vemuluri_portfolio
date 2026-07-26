@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Education(){
   return (
-    <section id="education" className="py-20 relative overflow-hidden">
-      <div className="container">
+    <section id="education" className="px-6 py-20 md:py-28 relative overflow-hidden">
+      <div className="mx-auto max-w-6xl">
         <div className="relative">
           <div className="pointer-events-none absolute inset-0 flex items-start">
             <div className="hidden text-[clamp(3rem,8vw,5.5rem)] font-extrabold tracking-[0.18em] text-slate-800/30 md:block">2022 - 2028</div>

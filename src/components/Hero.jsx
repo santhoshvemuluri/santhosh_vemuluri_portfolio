@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 
 export default function Hero(){
   return (
-    <section id="hero" className="py-24">
-      <div className="container flex flex-col items-center gap-12 md:flex-row">
+    <section id="hero" className="px-6 py-24 md:py-28">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row">
         <motion.div className="flex-1" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
           <div className="text-sm font-medium uppercase tracking-[0.24em] text-cyan-400">Hello, I’m</div>
           <h1 className="mt-4 font-extrabold font-display display-hero heading-tight leading-[0.9]"><span className="block text-cyan-400 text-glow">santhosh</span><span className="block">vemuluri</span></h1>

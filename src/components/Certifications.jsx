@@ -3,28 +3,52 @@ import { motion } from 'framer-motion'
 
 const certs = [
   {
-    title: 'Deloitte Data Analytics & AI',
+    title: 'AI in Risk Management and Fraud Detection',
+    issuer: 'LinkedIn Learning',
+    date: 'Jul 2026',
+    summary: 'Explored AI techniques for risk assessment, anomaly detection, and fraud prevention strategies.',
+    badges: ['AI', 'Risk Management', 'Fraud Detection'],
+    link: 'https://drive.google.com/your-cert-link'
+  },
+  {
+    title: 'Advanced Prompting with GitHub Copilot',
+    issuer: 'LinkedIn Learning',
+    date: 'Jul 2026',
+    summary: 'Strengthened AI-assisted workflows through prompt design, debugging support, and developer productivity patterns.',
+    badges: ['GitHub Copilot', 'Prompt Engineering', 'AI Workflow'],
+    link: 'https://drive.google.com/your-cert-link'
+  },
+  {
+    title: 'Career Essentials in Data Analysis',
+    issuer: 'Microsoft and LinkedIn',
+    date: 'Jul 2026',
+    summary: 'Built a practical foundation in analytics thinking, visualization, and business-focused reporting.',
+    badges: ['Data Analysis', 'Business Intelligence', 'Analytics'],
+    link: 'https://drive.google.com/your-cert-link'
+  },
+  {
+    title: 'Microsoft Azure AI Essentials',
+    issuer: 'Microsoft and LinkedIn',
+    date: 'Jun 2026',
+    summary: 'Covered Azure AI services, practical cloud AI usage, and responsible implementation principles.',
+    badges: ['Azure AI', 'Cloud AI', 'Machine Learning'],
+    link: 'https://drive.google.com/your-cert-link'
+  },
+  {
+    title: 'AWS Cloud Practitioner Essentials',
+    issuer: 'AWS Training & Certification',
+    date: 'May 2026',
+    summary: 'Developed a solid grounding in cloud architecture concepts, AWS services, and modern infrastructure basics.',
+    badges: ['AWS', 'Cloud Architecture', 'Cloud Computing'],
+    link: 'https://drive.google.com/your-cert-link'
+  },
+  {
+    title: 'Data Analytics & AI Virtual Experience',
     issuer: 'Deloitte',
     date: 'Jun 2026',
-    summary: 'Focused on analytics workflows, KPI reporting, and practical use of data in business decision-making.',
-    badges: ['Data Analytics', 'Cloud', 'KPI Dashboards'],
-    link: 'https://drive.google.com/file/d/1qK2K4hrnhtqysoHf36QkwZ4Fo1HFfoBK/view?usp=drive_link'
-  },
-  {
-    title: 'ServiceNow Agentic AI & ATF',
-    issuer: 'ServiceNow / AICTE',
-    date: 'Jul 2026',
-    summary: 'Explored automation, agentic workflows, and test automation practices in enterprise-oriented systems.',
-    badges: ['ServiceNow Admin', 'Agentic AI', 'Automated Testing'],
-    link: 'https://drive.google.com/file/d/1qK2K4hrnhtqysoHf36QkwZ4Fo1HFfoBK/view?usp=drive_link'
-  },
-  {
-    title: 'Quantum Computing Fundamentals',
-    issuer: 'CSC India / APSCHE',
-    date: 'Jul 2026',
-    summary: 'Covered foundational quantum concepts and their computational relevance in emerging technology research.',
-    badges: ['Quantum Algorithms', 'Computational Physics'],
-    link: 'https://drive.google.com/file/d/1qK2K4hrnhtqysoHf36QkwZ4Fo1HFfoBK/view?usp=drive_link'
+    summary: 'Focused on analytics workflows, KPI dashboards, and how data insights drive smarter decision-making.',
+    badges: ['Data Analytics', 'KPI Dashboards'],
+    link: 'https://drive.google.com/your-cert-link'
   }
 ]
 
@@ -34,8 +58,8 @@ export default function Certifications() {
   const mainDrive = 'https://drive.google.com/file/d/1qK2K4hrnhtqysoHf36QkwZ4Fo1HFfoBK/view?usp=drive_link'
 
   return (
-    <section id="certifications" className="py-20 relative overflow-hidden">
-      <div className="container">
+    <section id="certifications" className="px-6 py-20 md:py-28 relative overflow-hidden">
+      <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <h2 className="text-3xl font-display font-bold">MY <span className="text-cyan-400">CERTIFICATIONS</span></h2>
@@ -49,9 +73,10 @@ export default function Certifications() {
         <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr,0.9fr]">
           <motion.div
             key={activeCert.title}
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="rounded-2xl border border-cyan-400/20 bg-slate-900/70 p-6"
           >
             <div className="text-sm uppercase tracking-[0.3em] text-cyan-400">Featured credential</div>

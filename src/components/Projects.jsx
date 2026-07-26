@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 function formatTitle(name) {
-  return name.replace(/[-_]/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase())
+  return name
+    .replace(/[-_]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, (char) => char.toUpperCase())
 }
 
 export default function Projects() {
@@ -31,8 +35,8 @@ export default function Projects() {
   }, [])
 
   return (
-    <section id="projects" className="py-20">
-      <div className="container">
+    <section id="projects" className="px-6 py-20 md:py-28">
+      <div className="mx-auto max-w-6xl">
         <h2 className="text-3xl font-display font-bold">SELECTED <span className="text-cyan-400 italic">PROJECT</span></h2>
         {loading ? (
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -45,29 +49,33 @@ export default function Projects() {
             {repos.map((repo) => (
               <motion.article
                 key={repo.id}
-                whileHover={{ y: -6 }}
-                className="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden flex flex-col"
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -6, scale: 1.01 }}
+                className="flex h-full flex-col justify-between rounded-xl border border-slate-800 bg-slate-900/60 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-cyan-400/50"
               >
-                <div className="h-40 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-slate-400 px-6 text-center">
-                  {formatTitle(repo.name)}
+                <div>
+                  <div className="mb-4 flex items-center justify-between">
+                    <span className="rounded-full border border-cyan-400/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-300">GitHub</span>
+                    <span className="text-sm text-slate-400">{repo.stargazers_count || 0}★</span>
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-white transition-colors group-hover:text-cyan-300">{formatTitle(repo.name)}</h3>
+                  <p className="mt-3 flex-1 text-sm leading-6 text-slate-300">{repo.description || 'Public repository showcasing recent work in software engineering and data-driven development.'}</p>
                 </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl font-semibold text-slate-100">{formatTitle(repo.name)}</h3>
-                  <p className="mt-3 text-slate-300 flex-1 text-sm leading-6">{repo.description || 'Public repository showcasing recent work in software engineering and data-driven development.'}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-5">
+                  <div className="flex flex-wrap gap-2">
                     {repo.language ? (
-                      <span className="text-xs px-2 py-1 rounded-full border border-cyan-400/20 text-cyan-300">{repo.language}</span>
+                      <span className="rounded-full border border-cyan-400/20 px-2.5 py-1 text-xs text-cyan-300">{repo.language}</span>
                     ) : null}
-                    <span className="text-xs px-2 py-1 rounded-full border border-slate-700 text-slate-300 inline-flex items-center gap-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      {repo.stargazers_count || 0}
-                    </span>
+                    <span className="rounded-full border border-slate-700 px-2.5 py-1 text-xs text-slate-300">Repo</span>
                   </div>
                   <a
                     href={repo.html_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center justify-center rounded-md border border-cyan-400 px-4 py-2 text-sm font-medium text-cyan-400 hover:bg-cyan-400 hover:text-black transition"
+                    className="mt-6 inline-flex items-center justify-center rounded-md border border-cyan-400 px-4 py-2 text-sm font-medium text-cyan-400 transition hover:bg-cyan-400 hover:text-black"
                   >
                     View Code
                   </a>

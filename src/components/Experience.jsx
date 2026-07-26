@@ -5,7 +5,7 @@ const experiences = [
   {
     company: 'Deloitte',
     role: 'Data Analytics & AI Intern',
-    period: '2024 – Present',
+    period: 'May-June 2026',
     bullets: [
       'Built data-driven analytics workflows and KPI dashboards for business insight reporting.',
       'Explored cloud-based data pipelines and automation techniques to improve reporting quality.'
@@ -14,7 +14,7 @@ const experiences = [
   {
     company: 'CSC / APSCHE',
     role: 'Quantum Computing Research Contributor',
-    period: '2023 – 2024',
+    period: 'May-Jul 2026',
     bullets: [
       'Collaborated on quantum computing fundamentals and applied computational problem-solving.',
       'Supported academic workshops focused on emerging technologies and research communication.'
@@ -23,7 +23,7 @@ const experiences = [
   {
     company: 'ServiceNow / AICTE',
     role: 'Agentic AI & ATF Program Participant',
-    period: '2024',
+    period: 'June-Jul 2026',
     bullets: [
       'Worked with agentic AI concepts and automated testing workflows in a structured training environment.',
       'Strengthened understanding of enterprise-grade automation and intelligent process design.'
