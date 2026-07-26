@@ -4,17 +4,30 @@
 
 :root{
   --cyan-accent: #00F0FF;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-duration: 0.62s;
+  --glow-cyan-1: rgba(0,240,255,0.12);
+  --glow-cyan-2: rgba(0,240,255,0.06);
 }
 
 html,body,#root{height:100%}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}
 body{
   @apply bg-[#0B0F17] text-slate-200 antialiased;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+body, * {
+  transition: background-color var(--motion-duration) var(--motion-ease), border-color var(--motion-duration) var(--motion-ease), color var(--motion-duration) var(--motion-ease), box-shadow var(--motion-duration) var(--motion-ease), transform var(--motion-duration) var(--motion-ease), opacity var(--motion-duration) var(--motion-ease);
 }
 
 .container{@apply max-w-6xl mx-auto px-6}
-
-html{scroll-behavior:smooth}
 section{scroll-margin-top:6rem}
 ::selection{background:rgba(0,240,255,0.25);color:#f8fbff}
 
@@ -25,17 +38,14 @@ section{scroll-margin-top:6rem}
 .btn-outline{@apply border border-slate-700 text-white uppercase}
 
 .watermark{@apply text-slate-700/30 absolute select-none pointer-events-none}
+.motion-card{will-change:transform,opacity,box-shadow}
 
 /* Micro-tuning utilities */
-:root{
-  --glow-cyan-1: rgba(0,240,255,0.12);
-  --glow-cyan-2: rgba(0,240,255,0.06);
-}
 .glow-cyan{box-shadow:0 12px 40px var(--glow-cyan-1), 0 4px 12px var(--glow-cyan-2)}
 .text-glow{text-shadow:0 8px 40px rgba(0,240,255,0.06)}
 .heading-tight{letter-spacing:-0.02em}
 .display-hero{font-size:clamp(2.25rem,5vw,4.5rem);line-height:1}
-.fade-in-up{transform:translateY(8px);opacity:0;transition:all .45s cubic-bezier(.2,.9,.2,1)}
+.fade-in-up{transform:translateY(8px);opacity:0;transition:transform .55s var(--motion-ease), opacity .55s var(--motion-ease)}
 .fade-in-up.show{transform:none;opacity:1}
 
 /* small responsive tweaks */

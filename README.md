@@ -40,8 +40,7 @@ The site uses your resume data (extracted from the PDF you provided). Tell me an
 
 ---
 
-### Deploy buttons
+### Deploy 
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/santhoshvemuluri/santhosh_vemuluri_portfolio)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/santhoshvemuluri/santhosh_vemuluri_portfolio)
